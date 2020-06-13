@@ -12,30 +12,36 @@
   <body>
     <div class="app-wrap">
       <header>
-        
       </header>
       <main>
+        <!-- <input id="today" type="date"> -->
         <section class="location">
-          <div class="city">Balance</div>
+          <div class="top">Balance</div>
           <!-- <div class="date">$123</div> -->
           <form class="field" action="main.js" method="post">
             <label for="Amount">Amount</label>
-            <input type="number"  placeholder="Enter amount in Eur" id="person" multiple></input>
-            <select class="person" name="">
+            <input type="number" id="field" name="field"  placeholder="Enter amount in Eur" multiple></input>
+            <select class="person" id="select" name="">
             <option value="Natural">Natural Person</option>
             <option value="Legal">Legal Person</option>
             </select>
           </form>
         </section>
         <div class="current">
-          <input class="add" type="button" value="Add Money"></input>
-          <input class="withdraw" type="button" value="Withdraw"></input>
-          <div class="weather">History</div>
+          <input class="add" type="button" onclick = "addMoney()" value="Add Money"></input>
+          <input class="withdraw" type="button" onclick = "withdrawMoney();" value="Withdraw"></input>
+          <div class="History">History</div>
+          <!-- <p class="list"><b>Payment to xyz shop<span class="debit">-100$</span></b></p>
+          <p class="list"><b>Credit from abc shop<span class="credit">+200$</span></b></p>
+          <p class="list"><b>Credit from Tom<span class="credit">+300$</span></b></p> -->
 
 
         </div>
+        <footer>
+        </footer>
       </main>
     </div>
+    <script type="text/javascript" src="libs/jQuery/jquery-3.3.1.min.js" ></script>
     <script src="main.js "></script>
   </body>
 </html>
