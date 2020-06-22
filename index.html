@@ -18,23 +18,22 @@
         <section class="location">
           <div class="top">Balance</div>
           <!-- <div class="date">$123</div> -->
-          <form class="field" action="main.js" method="post">
+          <form class="field" action="main.js" method="post" id="my-form">
             <label for="Amount">Amount</label>
-            <input type="number" id="field" name="field"  placeholder="Enter amount in Eur" multiple></input>
+            <input type="number" id="field" name="Amount"  placeholder="Enter amount in Eur" multiple></input>
             <select class="person" id="select" name="">
-            <option value="Natural">Natural Person</option>
-            <option value="Legal">Legal Person</option>
+            <option value="user_type: Natural" id="1">Natural Person</option>
+            <option value="user_type: Legal" id="2">Legal Person</option>
             </select>
-          </form>
-        </section>
-        <div class="current">
-          <input class="add" type="button" onclick = "addMoney()" value="Add Money"></input>
-          <input class="withdraw" type="button" onclick = "withdrawMoney();" value="Withdraw"></input>
-          <div class="History">History</div>
-          <!-- <p class="list"><b>Payment to xyz shop<span class="debit">-100$</span></b></p>
-          <p class="list"><b>Credit from abc shop<span class="credit">+200$</span></b></p>
-          <p class="list"><b>Credit from Tom<span class="credit">+300$</span></b></p> -->
 
+        </section>
+        <div class="current" id="cash" name="">
+          <input class="add" id="b3" type="button" value="Add Money" type="Cash:Added"></input>
+          <input class="withdraw" id="b4" type="button" value="Withdraw" type="Cash:Withdraw"></input>
+          <div class="History">History</div>
+          <input type="button" id="out" name="" value="">
+          <!-- <input type="button" id="out" name="" value=""> -->
+</form>
 
         </div>
         <footer>
